@@ -11,6 +11,12 @@ My exploration of visualizing audio through interactive web experiences.
 - **3D Experiences**: Terrain, Sonogram, Beat Detection
 - **Frequency Analysis**: Bass/Mid/Treble Spectrums, EQ Analyzer
 
+## 🎬 Demo
+
+Check out the demo GIF showing the visualizations in action:
+
+![Demo](demo-audiojs.gif)
+
 ## 🚀 How to Use
 
 1. Open `index.html` in your browser
