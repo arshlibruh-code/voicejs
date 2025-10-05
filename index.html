@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AudioJS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <div class="status" id="status">Click "Start Audio" to begin</div>
+        
+        <div class="visualizations">
+            <div class="visualization-box">
+                <canvas id="canvas" style="width: var(--canvas-size); height: var(--canvas-size);"></canvas>
+            </div>
+            
+            <div class="visualization-box">
+                <canvas id="waveformCanvas" style="width: var(--canvas-size); height: var(--canvas-size);"></canvas>
+            </div>
+            
+            <div class="visualization-box">
+                <canvas id="hexCanvas" style="width: var(--canvas-size); height: var(--canvas-size);"></canvas>
+            </div>
+            
+            <div class="visualization-box">
+                <canvas id="particleCanvas" style="width: var(--canvas-size); height: var(--canvas-size);"></canvas>
+            </div>
+            
+            <div class="visualization-box">
+                <canvas id="circularCanvas" style="width: var(--canvas-size); height: var(--canvas-size);"></canvas>
+            </div>
+            
+            <div class="visualization-box">
+                <canvas id="lissajousCanvas" style="width: var(--canvas-size); height: var(--canvas-size);"></canvas>
+            </div>
+            
+            <div class="visualization-box">
+                <canvas id="connectedCanvas" style="width: var(--canvas-size); height: var(--canvas-size);"></canvas>
+            </div>
+            
+            <div class="visualization-box">
+                <canvas id="icuCanvas" style="width: var(--canvas-size); height: var(--canvas-size);"></canvas>
+            </div>
+            
+            <div class="visualization-box">
+                <canvas id="bassSpectrumCanvas" style="width: var(--canvas-size); height: var(--canvas-size);"></canvas>
+            </div>
+            
+            <div class="visualization-box">
+                <canvas id="midSpectrumCanvas" style="width: var(--canvas-size); height: var(--canvas-size);"></canvas>
+            </div>
+            
+            <div class="visualization-box">
+                <canvas id="trebleSpectrumCanvas" style="width: var(--canvas-size); height: var(--canvas-size);"></canvas>
+            </div>
+            
+            <div class="visualization-box">
+                <canvas id="fullAudioCanvas" style="width: var(--canvas-size); height: var(--canvas-size);"></canvas>
+            </div>
+            
+            <div class="visualization-box">
+                <canvas id="pixelCanvas" style="width: var(--canvas-size); height: var(--canvas-size);"></canvas>
+            </div>
+            
+            <div class="visualization-box">
+                <canvas id="studioCanvas" style="width: var(--canvas-size); height: var(--canvas-size);"></canvas>
+            </div>
+            
+            <div class="visualization-box">
+                <div id="terrainContainer" style="width: var(--canvas-size); height: var(--canvas-size);"></div>
+            </div>
+            
+            <div class="visualization-box">
+                <canvas id="roseCanvas" style="width: var(--canvas-size); height: var(--canvas-size);"></canvas>
+            </div>
+            
+            <div class="visualization-box">
+                <canvas id="voronoiCanvas" style="width: var(--canvas-size); height: var(--canvas-size);"></canvas>
+            </div>
+            
+            <div class="visualization-box">
+                <canvas id="cardioidCanvas" style="width: var(--canvas-size); height: var(--canvas-size);"></canvas>
+            </div>
+            
+            <div class="visualization-box">
+                <canvas id="fourierCanvas" style="width: var(--canvas-size); height: var(--canvas-size);"></canvas>
+            </div>
+            
+            <div class="visualization-box">
+                <canvas id="phyllotaxisCanvas" style="width: var(--canvas-size); height: var(--canvas-size);"></canvas>
+            </div>
+            
+            <div class="visualization-box">
+                <canvas id="parametricCanvas" style="width: var(--canvas-size); height: var(--canvas-size);"></canvas>
+            </div>
+            
+            <div class="visualization-box">
+                <canvas id="spectrogramCanvas" style="width: var(--canvas-size); height: var(--canvas-size);"></canvas>
+            </div>
+            
+            <div class="visualization-box">
+                <canvas id="fftAnalyzerCanvas" style="width: var(--canvas-size); height: var(--canvas-size);"></canvas>
+            </div>
+            
+            <div class="visualization-box">
+                <canvas id="oscilloscopeCanvas" style="width: var(--canvas-size); height: var(--canvas-size);"></canvas>
+            </div>
+            
+            <div class="visualization-box">
+                <canvas id="phaseScopeCanvas" style="width: var(--canvas-size); height: var(--canvas-size);"></canvas>
+            </div>
+            
+            <div class="visualization-box">
+                <canvas id="goniometerCanvas" style="width: var(--canvas-size); height: var(--canvas-size);"></canvas>
+            </div>
+            
+            <div class="visualization-box">
+                <canvas id="correlationMeterCanvas" style="width: var(--canvas-size); height: var(--canvas-size);"></canvas>
+            </div>
+            
+            <div class="visualization-box">
+                <canvas id="vuMeterCanvas" style="width: var(--canvas-size); height: var(--canvas-size);"></canvas>
+            </div>
+            
+            <div class="visualization-box">
+                <canvas id="sonogram3dCanvas" style="width: var(--canvas-size); height: var(--canvas-size);"></canvas>
+            </div>
+            
+            <div class="visualization-box">
+                <canvas id="lissajousOscilloscopeCanvas" style="width: var(--canvas-size); height: var(--canvas-size);"></canvas>
+            </div>
+            
+            <div class="visualization-box">
+                <canvas id="eqAnalyzerCanvas" style="width: var(--canvas-size); height: var(--canvas-size);"></canvas>
+            </div>
+            
+            <div class="visualization-box">
+                <canvas id="harmonicAnalyzerCanvas" style="width: var(--canvas-size); height: var(--canvas-size);"></canvas>
+            </div>
+            
+            <div class="visualization-box">
+                <canvas id="beatDetectionCanvas" style="width: var(--canvas-size); height: var(--canvas-size);"></canvas>
+            </div>
+            
+            <div class="visualization-box">
+                <canvas id="spectralCentroidCanvas" style="width: var(--canvas-size); height: var(--canvas-size);"></canvas>
+            </div>
+            
+            <div class="visualization-box">
+                <canvas id="dynamicRangeCanvas" style="width: var(--canvas-size); height: var(--canvas-size);"></canvas>
+            </div>
+            
+        </div>
+        
+        <button id="toggleBtn">Stop Listening</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
+
